@@ -13,7 +13,7 @@ import Settings from "./pages/settings/settings"; // ← Nouvelle page Paramètr
 import MainLayout from "./layouts/MainLayout"; // Layout avec Header/Footer
 import CreerCV from "./pages/CreerCV/CreerCV";
 import CreerModele from "./pages/CreerCV/CreerModele";
-
+import AdminLayout from "./pages/Admin/AdminLayout";
 
 function App() {
   return (
@@ -44,30 +44,40 @@ function App() {
         />
 
         <Route
-  path="/helpuser"
-  element={
-   
-      <Helpuser />
-  
-  }
-/>
-<Route
-  path="/creer-cv"
-  element={
-    <MainLayout>
-      <CreerCV />
-    </MainLayout>
-  }
-/>
+          path="/helpuser"
+          element={
 
-<Route
-  path="/creer-cv/:modele"
-  element={
-    <MainLayout>
-      <CreerModele />
-    </MainLayout>
-  }
-/>
+            <Helpuser />
+
+          }
+        />
+
+        <Route
+          path="/AdminLayout"
+          element={
+          
+              <AdminLayout  />
+            
+          }
+        />
+
+        <Route
+          path="/creer-cv"
+          element={
+            
+              <CreerCV />
+            
+          }
+        />
+
+        <Route
+          path="/creer-cv/:modele"
+          element={
+            <MainLayout>
+              <CreerModele />
+            </MainLayout>
+          }
+        />
 
 
         {/* Page aide */}
@@ -84,9 +94,9 @@ function App() {
         <Route
           path="/profile"
           element={
-          
-              <Profile />
-            
+
+            <Profile />
+
           }
         />
 
@@ -94,13 +104,13 @@ function App() {
         <Route
           path="/settings"
           element={
-            
-              <Settings />
-          
+
+            <Settings />
+
           }
         />
-        
-        
+
+
         {/* Dashboard SANS Header/Footer */}
         <Route path="/dashboard" element={<Dashboard />} />
 
