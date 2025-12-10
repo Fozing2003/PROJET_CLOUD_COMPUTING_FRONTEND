@@ -1,0 +1,120 @@
+/* footer.css */
+
+.footer {
+  width: 100%;
+  background-color: #111827; /* fond sombre différent du header */
+  color: #e5e7eb; /* texte clair */
+  padding: 3rem 1rem 1rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logo-box {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.brand-text .brand-name {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.brand-text p {
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  color: #9ca3af;
+}
+
+/* Liens utiles */
+.footer-links, .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-links h4, .footer-contact h4 {
+  font-weight: 600;
+  color: #f3f4f6;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #3b82f6;
+}
+
+/* Contact et réseaux sociaux */
+.footer-contact p {
+  font-size: 0.875rem;
+}
+
+.socials {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: #1f2937;
+  border-radius: 50%;
+  color: #e5e7eb;
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.socials a:hover {
+  background-color: #3b82f6;
+  color: white;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.75rem;
+  color: #6b7280;
+  border-top: 1px solid #374151;
+  padding-top: 1rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+  }
+}

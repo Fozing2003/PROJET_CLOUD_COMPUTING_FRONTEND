@@ -1,0 +1,184 @@
+/* ------ TOPBAR ------ */
+.topbar {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 18px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Left section */
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-box {
+  width: 32px;
+  height: 32px;
+  background: #3a6df0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.brand-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #334;
+}
+
+/* Right section */
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* RAPPROCHE AVATAR ET CLOCHE */
+  margin-right: 10px;
+}
+
+/* Notification icon */
+.notification-icon {
+  position: relative;
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -6px;
+  background: red;
+  color: white;
+  font-size: 10px;
+  padding: 1px 4px;
+  border-radius: 50%;
+}
+
+/* Profile avatar */
+.profile-container {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  transition: 0.2s;
+}
+
+.profile-avatar:hover {
+  border-color: #777;
+}
+
+/* Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 170px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  padding: 8px 0;
+  list-style: none;
+  z-index: 200;
+}
+
+.profile-dropdown li {
+  padding: 10px 15px;
+}
+
+.profile-dropdown li:hover {
+  background: #f5f5f5;
+}
+
+.profile-dropdown a {
+  color: #333;
+  text-decoration: none;
+}
+
+
+/* ------ RESPONSIVE ------ */
+@media (max-width: 600px) {
+  .brand-name {
+    display: none; /* pour rendre le topbar plus compact */
+  }
+
+  .topbar {
+    padding: 0 12px;
+  }
+
+  .topbar-right {
+    gap: 8px;
+  }
+
+  .profile-dropdown {
+    width: 150px;
+  }
+}
+
+/* Conteneur de la searchbar */
+.topbar-search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Champ de recherche */
+.search-input {
+  width: 45%;
+  max-width: 320px;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.search-input:focus {
+  border-color: #5e81f4;
+  box-shadow: 0 0 5px rgba(94, 129, 244, 0.3);
+}
+
+/* Bouton loupe */
+.search-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background-color: #5e81f4;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background-color: #4662d4;
+}
+

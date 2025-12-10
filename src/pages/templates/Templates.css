@@ -1,0 +1,104 @@
+.templates-container {
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.templates-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.templates-container p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+/* Grid des modèles */
+.templates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+}
+
+/* Carte modèle : reprend ton CSS existant */
+.cv-model {
+  width: 100%;
+  max-width: 260px;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cv-model:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.cv-model-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cv-sample {
+  width: 100%;
+  height: 220px;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-sample img.cv-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cv-model:hover .cv-sample img.cv-image {
+  transform: scale(1.05);
+}
+
+.cv-model-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.use-model-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.use-model-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .templates-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+  .cv-sample {
+    height: 150px;
+  }
+}

@@ -1,0 +1,189 @@
+/* home.css */
+
+/* Style général du body et de l'app */
+.app {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* fond clair */
+  min-height: 100vh;
+  padding: 2rem;
+  color: #111827;
+}
+
+.app main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centre horizontalement */
+  text-align: center; /* centre le texte */
+  gap: 0.5rem; /* espace entre les éléments */
+  margin-bottom: 2rem;
+}
+
+/* Texte principal */
+.app main h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+  max-width: 700px;
+}
+
+.app main p {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+/* Bouton principal : "Créer votre CV" */
+.use-model-btn1 {
+  padding: 0.9rem 2.2rem;        /* taille augmentée */
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.6rem;         /* arrondi plus élégant */
+  background-color: #4f46e5;     /* même bleu que le logo */
+  color: white;
+  font-size: 1.1rem;             /* texte plus grand */
+  font-weight: 600;              /* plus visible */
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.use-model-btn1:hover {
+  background-color: #3e3ab8; /* plus foncé */
+  transform: translateY(-3px); /* petite animation */
+}
+
+/* Carousel des modèles */
+.cv-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scroll-behavior: smooth;
+}
+
+.cv-carousel::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cv-carousel::-webkit-scrollbar-thumb {
+  background-color: #9ca3af;
+  border-radius: 4px;
+}
+
+.cv-carousel::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 4px;
+}
+
+/* Carte de modèle */
+.cv-model {
+  min-width: 220px;              /* plus large pour image */
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cv-model:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Contenu interne de la carte */
+.cv-model-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+/* Image du modèle */
+.cv-sample {
+  width: 100%;
+  height: 200px;                /* hauteur augmentée */
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cv-sample img.cv-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;             /* remplissage complet du cadre */
+  transition: transform 0.3s ease;
+}
+
+.cv-model:hover .cv-sample img.cv-image {
+  transform: scale(1.05);        /* léger zoom au hover */
+}
+
+/* Nom du modèle */
+.cv-model-content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Bouton utiliser */
+.use-model-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  background-color: #3b82f6; /* bleu vif */
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.use-model-btn:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cv-carousel {
+    gap: 1rem;
+  }
+  .cv-model {
+    min-width: 160px;             /* ajusté pour mobile */
+  }
+  .cv-sample {
+    height: 150px;                /* image plus petite sur mobile */
+  }
+}
+
+.see-more {
+  margin-top: 1rem;
+}
+
+.see-more-btn {
+  padding: 0.6rem 1.5rem;
+  background-color: #4f46e5;  /* même bleu que le logo */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.see-more-btn:hover {
+  background-color: #3e3ab8;
+  transform: translateY(-2px);
+}
+
+.arrow {
+  font-size: 1.2rem;
+}

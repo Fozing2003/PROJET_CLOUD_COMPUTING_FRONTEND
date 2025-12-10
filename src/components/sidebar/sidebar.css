@@ -1,0 +1,82 @@
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+  padding: 20px 10px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+    margin-top: 60px;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.sidebar-link:hover {
+  background-color: #e0e0e0;
+}
+
+.dropdown-toggle {
+  user-select: none;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+.dropdown-menu li {
+  margin: 8px 0;
+}
+
+.miniature {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.miniature:hover {
+  transform: scale(1.05);
+}
+
+.chevron {
+  font-size: 0.8rem;
+}
+
+
+.miniature {
+  width: 50px;        /* largeur fixe pour miniatures */
+  height: 50px;       /* hauteur fixe pour miniatures */
+  object-fit: cover;  /* ajuste l'image sans la déformer */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.miniature:hover {
+  transform: scale(1.1); /* léger zoom au survol */
+}

@@ -1,0 +1,107 @@
+.cv-container {
+  display: flex;
+  width: 900px;
+  margin: auto;
+  background: #f7f7f7;
+  font-family: Arial, sans-serif;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-section {
+  width: 35%;
+  background: #e5e5e5;
+  padding: 25px;
+}
+
+.right-section {
+  width: 65%;
+  padding: 25px;
+}
+
+.photo-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.name {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.title {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+section {
+  margin-top: 30px;
+}
+
+h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.bar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar-line span {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #d3d3d3;
+  border-radius: 4px;
+}
+
+.level {
+  width: 60%;
+  height: 100%;
+  background: #f1c40f;
+  border-radius: 4px;
+}
+
+.exp-block {
+  margin-bottom: 20px;
+}
+
+.exp-block h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 13px;
+  margin-top: 5px;
+}

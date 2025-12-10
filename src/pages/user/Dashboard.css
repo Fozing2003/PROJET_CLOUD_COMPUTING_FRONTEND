@@ -1,0 +1,128 @@
+.dashboard-layout {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background: #f7f7f7;
+}
+
+/* Partie droite (topbar + contenu) */
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Contenu sous le topbar */
+.dashboard-inner {
+  flex: 1;
+  padding: 25px;
+  overflow-y: auto;
+   margin-top: 20px; 
+}
+
+/* Styles de ton Dashboard */
+.welcome-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 40px 0 20px 0; 
+}
+
+.welcome-title span {
+  color: #2c3e50;
+}
+
+.create-btn {
+  background: #2c3e50;
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.cv-section h2 {
+  margin-bottom: 10px;
+}
+
+.cv-list {
+  list-style: none;
+  padding: 0;
+}
+
+.cv-item {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.cv-view-btn {
+  background: transparent;
+  border: 1px solid #333;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.cv-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn:hover {
+  color: #2c3e50;
+}
+
+.delete-btn:hover {
+  color: #e74c3c; /* rouge pour la corbeille */
+}
+
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.cv-table th, .cv-table td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.cv-table th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+}
+
+.cv-table td {
+  background-color: #ffffff;
+}
+
+.cv-table tr:hover td {
+  background-color: #f9fafb;
+}
+
+.icon-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.delete-btn {
+  color: red;
+}
